@@ -23,14 +23,34 @@ public class Quiz {
 	}
 	public double giveQuiz() {
 
-		for(int i =0; i <= questions.length; i++) {
-			System.out.println(questions[i]);
+		for(int i = 0; i <  5 ; i++) {
+			System.out.println(questions[i].getTheQuestionText());
+			System.out.println("True or false?");
 			Scanner scan = new Scanner(System.in);
 			userAnswers[i] = scan.nextLine();
 			
 			if(userAnswers[i].compareTo(questions[i].getCorrectAnswer()) == 0) {
 				correctCounter++;
 				System.out.println("Correct!");
+
+			}else {
+				System.out.println("Sorry, that's incorrect.");
+
+			}
+				
+				
+		}for(int j = 5; j <  10 ; j++) {
+			System.out.println(questions[j].getTheQuestionText());
+			System.out.println("Choose A, B, or C");
+			Scanner scan = new Scanner(System.in);
+			userAnswers[j] = scan.nextLine();
+			
+			if(userAnswers[j].compareTo(questions[j].getCorrectAnswer()) == 0) {
+				correctCounter++;
+				System.out.println("Correct!");
+
+			}else {
+				System.out.println("Sorry, that's incorrect.");
 
 			}
 				

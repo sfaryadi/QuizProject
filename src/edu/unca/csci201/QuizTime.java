@@ -9,8 +9,13 @@ public class QuizTime {
 		Question three = new TrueFalseQuestion("1 + 1 = 2", "True");
 		Question four = new TrueFalseQuestion("2 + 2 = 5", "False");
 		Question five = new TrueFalseQuestion("1 + 1 = 2", "True");
-		
-		
+		Question six = new MultipleChoiceQuestion("Purple is a: A: color B: shape C: number", "C");	
+		Question seven = new MultipleChoiceQuestion("Purple is a: A: color B: shape C: number", "C");
+		Question eight = new MultipleChoiceQuestion("Purple is a: A: color B: shape C: number", "C");
+		Question nine = new MultipleChoiceQuestion("Purple is a: A: color B: shape C: number", "C");
+		Question ten = new MultipleChoiceQuestion("Purple is a: A: color B: shape C: number", "C");
+		Question eleven = new ShortAnswerQuestion("What factors have contributed to Gibson declaring bankrupt?");
+
 		
 		
 		
@@ -20,7 +25,12 @@ public class QuizTime {
 		quiz1.addQuestion(three);
 		quiz1.addQuestion(four);
 		quiz1.addQuestion(five);
-		
+		quiz1.addQuestion(six);
+		quiz1.addQuestion(seven);
+		quiz1.addQuestion(eight);
+		quiz1.addQuestion(nine);
+		quiz1.addQuestion(ten);
+		quiz1.addQuestion(eleven);
 		quiz1.giveQuiz();
 	}
 
