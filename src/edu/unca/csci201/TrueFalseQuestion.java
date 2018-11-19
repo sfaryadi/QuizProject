@@ -1,25 +1,31 @@
 package edu.unca.csci201;
 
 public class TrueFalseQuestion implements Question {
-
-	
+	String question;
+	String answer;
+	public TrueFalseQuestion(String question, String answer) {
+		this.question = question;
+		this.answer = answer;
+	}
 	
 	
 	@Override
 	public String getTheQuestionText() {
-		return null;
+		return question;
 	}
 
 	@Override
 	public boolean isCorrectAnswer(String answer) {
-		if(answer == userAnswer) {
+		if(this.answer.compareTo(answer) == 0) {
 			return true;
+		}else {
+			return false;
 		}
 	}
 
 	@Override
 	public String getCorrectAnswer() {
-		return null;
+		return answer;
 	}
 
 }
