@@ -2,9 +2,15 @@ package edu.unca.csci201;
 
 public class ShortAnswerQuestion implements Question {
 	String question;
+	
+	public ShortAnswerQuestion(String question) {
+		this.question = question;
+		
+	}
+	
 	@Override
 	public String getTheQuestionText() {
-		return null;
+		return question;
 	}
 
 	@Override
